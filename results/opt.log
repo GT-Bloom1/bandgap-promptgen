@@ -1,0 +1,40 @@
+12:17:20 === 优化闭环: std_kb ===
+12:17:26 [round 0] score=0.942 acc=0.923 f1=0.961
+12:17:32   [round 1] cand 0: score=1.000 acc=1.000 f1=1.000 rules=10
+12:17:37   [round 1] cand 1: score=0.941 acc=0.923 f1=0.959 rules=11
+12:17:42   [round 1] cand 2: score=1.000 acc=1.000 f1=1.000 rules=11
+12:17:42 [round 1] 接受: score=1.000
+12:17:42 train 已满分，停止
+12:17:42 std_kb: final train {'acc': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'value_f1': 1.0} | 优化阶段 tokens=229277 calls=104
+12:17:42 === 优化闭环: std_nokb ===
+12:17:42 [round 0] score=0.942 acc=0.923 f1=0.961
+12:17:42   [round 1] cand 0: score=1.000 acc=1.000 f1=1.000 rules=11
+12:17:42   [round 1] cand 1: score=1.000 acc=1.000 f1=1.000 rules=10
+12:17:42   [round 1] cand 2: score=0.915 acc=0.885 f1=0.944 rules=11
+12:17:42 [round 1] 接受: score=1.000
+12:17:42 train 已满分，停止
+12:17:42 std_nokb: final train {'acc': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'value_f1': 1.0} | 优化阶段 tokens=169252 calls=104
+12:17:42 === 优化闭环: cold_kb ===
+12:17:49 [round 0] score=0.968 acc=0.962 f1=0.974
+12:17:57   [round 1] cand 0: score=0.967 acc=0.962 f1=0.973 rules=11
+12:18:04   [round 1] cand 1: score=0.967 acc=0.962 f1=0.973 rules=10
+12:18:13   [round 1] cand 2: score=0.967 acc=0.962 f1=0.973 rules=10
+12:18:13 [round 1] 无提升，保留旧版本 (stall=1)
+12:18:20   [round 2] cand 0: score=0.967 acc=0.962 f1=0.973 rules=11
+12:18:31   [round 2] cand 1: score=0.967 acc=0.962 f1=0.973 rules=10
+12:18:38   [round 2] cand 2: score=0.967 acc=0.962 f1=0.973 rules=10
+12:18:38 [round 2] 无提升，保留旧版本 (stall=2)
+12:18:38 cold_kb: final train {'acc': 0.9615384615384616, 'precision': 0.95, 'recall': 1.0, 'f1': 0.9743589743589743, 'value_f1': 0.9743589743589743} | 优化阶段 tokens=430668 calls=182
+12:18:38 === 优化闭环: cold_nokb ===
+12:18:38 [round 0] score=0.917 acc=0.885 f1=0.949
+12:18:38   [round 1] cand 0: score=0.948 acc=0.923 f1=0.973 rules=11
+12:18:38   [round 1] cand 1: score=0.941 acc=0.923 f1=0.959 rules=11
+12:18:38   [round 1] cand 2: score=0.967 acc=0.962 f1=0.973 rules=11
+12:18:38 [round 1] 接受: score=0.967
+12:18:38   [round 2] cand 0: score=0.967 acc=0.962 f1=0.973 rules=11
+12:18:38   [round 2] cand 1: score=1.000 acc=1.000 f1=1.000 rules=11
+12:18:38   [round 2] cand 2: score=1.000 acc=1.000 f1=1.000 rules=11
+12:18:38 [round 2] 接受: score=1.000
+12:18:38 train 已满分，停止
+12:18:38 cold_nokb: final train {'acc': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'value_f1': 1.0} | 优化阶段 tokens=266318 calls=182
+12:18:38 API 统计: {'calls': 44, 'cache_hits': 548}

@@ -1,0 +1,299 @@
+{
+ "U1": {
+  "A_manual": {
+   "fmt_ok": true,
+   "n_records": 0,
+   "records": [],
+   "raw_head": "[]"
+  },
+  "B_direct_llm": {
+   "fmt_ok": true,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "undoped TiO2 reference",
+     "band_gap": 385,
+     "unit": "nm",
+     "band_gap_eV": 3.22,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "Nb-doped TiO2 thin films",
+     "band_gap": 412,
+     "unit": "nm",
+     "band_gap_eV": 3.009,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[{\"material\":\"undoped TiO2 reference\",\"band_gap\":385,\"unit\":\"nm\",\"band_gap_eV\":3.22,\"method\":\"experimental\",\"gap_type\":\"optical\",\"evidence\":\"The undoped TiO2 re"
+  },
+  "A2_manual_schema": {
+   "fmt_ok": false,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "TiO2 (undoped, thin film on quartz glass)",
+     "band_gap": 385,
+     "unit": "nm",
+     "band_gap_eV": 3.22,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "TiO2 (Nb-doped, thin film on quartz glass)",
+     "band_gap": 412,
+     "unit": "nm",
+     "band_gap_eV": 3.009,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "```json\n[\n  {\n    \"material\": \"TiO2 (undoped, thin film on quartz glass)\",\n    \"band_gap\": 385,\n    \"unit\": \"nm\",\n    \"band_gap_eV\": 3.220,\n    \"method\": \"exper"
+  },
+  "OURS": {
+   "fmt_ok": true,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "TiO2 (undoped reference, thin film)",
+     "band_gap": 385,
+     "unit": "nm",
+     "band_gap_eV": 3.22,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "TiO2 (Nb-doped, thin film)",
+     "band_gap": 412,
+     "unit": "nm",
+     "band_gap_eV": 3.009,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[{\"material\": \"TiO2 (undoped reference, thin film)\", \"band_gap\": 385, \"unit\": \"nm\", \"band_gap_eV\": 3.220, \"method\": \"experimental\", \"gap_type\": \"optical\", \"evid"
+  }
+ },
+ "U2": {
+  "A_manual": {
+   "fmt_ok": false,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "Monolayer WS2",
+     "band_gap": 2.05,
+     "unit": "eV",
+     "band_gap_eV": 2.05,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "Monolayer WS2",
+     "band_gap": 1.66,
+     "unit": "eV",
+     "band_gap_eV": 1.66,
+     "method": "DFT",
+     "gap_type": "electronic"
+    }
+   ],
+   "raw_head": "```json\n[\n  {\n    \"material\": \"Monolayer WS2\",\n    \"band_gap\": 2.05,\n    \"unit\": \"eV\",\n    \"band_gap_eV\": 2.05,\n    \"method\": \"experimental\",\n    \"gap_type\": \"o"
+  },
+  "B_direct_llm": {
+   "fmt_ok": true,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "Monolayer WS2",
+     "band_gap": 2.05,
+     "unit": "eV",
+     "band_gap_eV": 2.05,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "Monolayer WS2",
+     "band_gap": 1.66,
+     "unit": "eV",
+     "band_gap_eV": 1.66,
+     "method": "DFT",
+     "gap_type": "electronic"
+    }
+   ],
+   "raw_head": "[{\"material\":\"Monolayer WS2\",\"band_gap\":2.05,\"unit\":\"eV\",\"band_gap_eV\":2.05,\"method\":\"experimental\",\"gap_type\":\"optical\",\"evidence\":\"Monolayer WS2 was exfoliate"
+  },
+  "A2_manual_schema": {
+   "fmt_ok": false,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "WS2 (monolayer)",
+     "band_gap": 2.05,
+     "unit": "eV",
+     "band_gap_eV": 2.05,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "WS2 (monolayer)",
+     "band_gap": 1.66,
+     "unit": "eV",
+     "band_gap_eV": 1.66,
+     "method": "DFT",
+     "gap_type": "electronic"
+    }
+   ],
+   "raw_head": "```json\n[\n  {\n    \"material\": \"WS2 (monolayer)\",\n    \"band_gap\": 2.05,\n    \"unit\": \"eV\",\n    \"band_gap_eV\": 2.05,\n    \"method\": \"experimental\",\n    \"gap_type\": "
+  },
+  "OURS": {
+   "fmt_ok": true,
+   "n_records": 2,
+   "records": [
+    {
+     "material": "WS2 (monolayer)",
+     "band_gap": 2.05,
+     "unit": "eV",
+     "band_gap_eV": 2.05,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "WS2 (monolayer)",
+     "band_gap": 1.66,
+     "unit": "eV",
+     "band_gap_eV": 1.66,
+     "method": "DFT",
+     "gap_type": "electronic"
+    }
+   ],
+   "raw_head": "[{\"material\": \"WS2 (monolayer)\", \"band_gap\": 2.05, \"unit\": \"eV\", \"band_gap_eV\": 2.05, \"method\": \"experimental\", \"gap_type\": \"optical\", \"evidence\": \"an emission "
+  }
+ },
+ "U3": {
+  "A_manual": {
+   "fmt_ok": true,
+   "n_records": 3,
+   "records": [
+    {
+     "material": "ZnS",
+     "band_gap": 3.68,
+     "unit": "eV",
+     "band_gap_eV": 3.68,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnSe",
+     "band_gap": 2.7,
+     "unit": "eV",
+     "band_gap_eV": 2.7,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnTe",
+     "band_gap": 2.25,
+     "unit": "eV",
+     "band_gap_eV": 2.25,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[\n  {\n    \"material\": \"ZnS\",\n    \"band_gap\": 3.68,\n    \"unit\": \"eV\",\n    \"band_gap_eV\": 3.68,\n    \"method\": \"experimental\",\n    \"gap_type\": \"optical\",\n    \"evid"
+  },
+  "B_direct_llm": {
+   "fmt_ok": true,
+   "n_records": 3,
+   "records": [
+    {
+     "material": "ZnS",
+     "band_gap": 3.68,
+     "unit": "eV",
+     "band_gap_eV": 3.68,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnSe",
+     "band_gap": 2.7,
+     "unit": "eV",
+     "band_gap_eV": 2.7,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnTe",
+     "band_gap": 2.25,
+     "unit": "eV",
+     "band_gap_eV": 2.25,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[{\"material\":\"ZnS\",\"band_gap\":3.68,\"unit\":\"eV\",\"band_gap_eV\":3.68,\"method\":\"experimental\",\"gap_type\":\"optical\",\"evidence\":\"ZnS, ZnSe and ZnTe. The powders were "
+  },
+  "A2_manual_schema": {
+   "fmt_ok": true,
+   "n_records": 3,
+   "records": [
+    {
+     "material": "ZnS (sphalerite)",
+     "band_gap": 3.68,
+     "unit": "eV",
+     "band_gap_eV": 3.68,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnSe (sphalerite)",
+     "band_gap": 2.7,
+     "unit": "eV",
+     "band_gap_eV": 2.7,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnTe (sphalerite)",
+     "band_gap": 2.25,
+     "unit": "eV",
+     "band_gap_eV": 2.25,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[\n  {\n    \"material\": \"ZnS (sphalerite)\",\n    \"band_gap\": 3.68,\n    \"unit\": \"eV\",\n    \"band_gap_eV\": 3.680,\n    \"method\": \"experimental\",\n    \"gap_type\": \"optic"
+  },
+  "OURS": {
+   "fmt_ok": true,
+   "n_records": 3,
+   "records": [
+    {
+     "material": "ZnS (sphalerite)",
+     "band_gap": 3.68,
+     "unit": "eV",
+     "band_gap_eV": 3.68,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnSe (sphalerite)",
+     "band_gap": 2.7,
+     "unit": "eV",
+     "band_gap_eV": 2.7,
+     "method": "experimental",
+     "gap_type": "optical"
+    },
+    {
+     "material": "ZnTe (sphalerite)",
+     "band_gap": 2.25,
+     "unit": "eV",
+     "band_gap_eV": 2.25,
+     "method": "experimental",
+     "gap_type": "optical"
+    }
+   ],
+   "raw_head": "[{\"material\": \"ZnS (sphalerite)\", \"band_gap\": 3.68, \"unit\": \"eV\", \"band_gap_eV\": 3.68, \"method\": \"experimental\", \"gap_type\": \"optical\", \"evidence\": \"Subsequent "
+  }
+ }
+}

@@ -1,0 +1,118 @@
+[
+ {
+  "id": "D01",
+  "exact": 1,
+  "output": [
+   {
+    "material": "ZnS (wurtzite)",
+    "band_gap": 2.1,
+    "unit": "eV",
+    "band_gap_eV": 2.1,
+    "method": "DFT",
+    "gap_type": "electronic",
+    "evidence": "PBE calculations give a band gap of 2.1 eV"
+   },
+   {
+    "material": "ZnS (wurtzite)",
+    "band_gap": 3.45,
+    "unit": "eV",
+    "band_gap_eV": 3.45,
+    "method": "DFT",
+    "gap_type": "electronic",
+    "evidence": "HSE06 gives 3.45 eV"
+   },
+   {
+    "material": "ZnS (wurtzite, nanopowder)",
+    "band_gap": 3.55,
+    "unit": "eV",
+    "band_gap_eV": 3.55,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "diffuse reflectance measurements on our nanopowders show an optical band gap of 3.55 eV"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 4008
+ },
+ {
+  "id": "D02",
+  "exact": 1,
+  "output": [
+   {
+    "material": "Sb2S3 (thin film, annealed at 300 °C)",
+    "band_gap": 885,
+    "unit": "nm",
+    "band_gap_eV": 1.401,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "absorption edge at 885 nm, giving the band gap of the film"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 728
+ },
+ {
+  "id": "D03",
+  "exact": 1,
+  "output": [],
+  "errors": [],
+  "warnings": [],
+  "tokens": 3091
+ },
+ {
+  "id": "D04",
+  "exact": 1,
+  "output": [
+   {
+    "material": "WS2 (monolayer)",
+    "band_gap": 2.4,
+    "unit": "eV",
+    "band_gap_eV": 2.4,
+    "method": "experimental",
+    "gap_type": "electronic",
+    "evidence": "The fundamental gap of monolayer WS2 from scanning tunneling spectroscopy is 2.4 eV"
+   },
+   {
+    "material": "WS2 (monolayer)",
+    "band_gap": 2.0,
+    "unit": "eV",
+    "band_gap_eV": 2.0,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "the A-exciton optical gap seen in absorption of the same sample is 2.0 eV"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 3534
+ },
+ {
+  "id": "D05",
+  "exact": 1,
+  "output": [
+   {
+    "material": "LiNbO3 (single crystal)",
+    "band_gap": 320,
+    "unit": "nm",
+    "band_gap_eV": 3.875,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "the absorption edge lies at 320 nm"
+   },
+   {
+    "material": "LiNbO3 (single crystal)",
+    "band_gap": 3.5,
+    "unit": "eV",
+    "band_gap_eV": 3.5,
+    "method": "DFT",
+    "gap_type": "electronic",
+    "evidence": "a GGA+U calculation of the same crystal yields a band gap of 3.5 eV"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 1321
+ }
+]

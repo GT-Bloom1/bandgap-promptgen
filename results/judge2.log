@@ -1,0 +1,5 @@
+12:09:36 judge A_manual: mean=4.43 (n=70)
+12:09:36 judge B_direct_llm: mean=4.43 (n=70)
+12:09:37 judge A2_manual_schema: mean=4.79 (n=70)
+12:09:48 judge OURS: mean=4.84 (n=70)
+12:09:48 API 统计: {'calls': 16, 'cache_hits': 264}

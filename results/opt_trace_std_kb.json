@@ -1,0 +1,37 @@
+{
+ "trace": [
+  {
+   "round": 0,
+   "score": 0.9420579420579421,
+   "acc": 0.9230769230769231,
+   "f1": 0.9610389610389611,
+   "n_rules": 9,
+   "kind": "init",
+   "analysis": ""
+  },
+  {
+   "round": 1,
+   "score": 1.0,
+   "acc": 1.0,
+   "f1": 1.0,
+   "n_rules": 10,
+   "kind": "accepted",
+   "analysis": "Added an explicit rule that an edge or cutoff wavelength from which the band gap is estimated counts as a numeric value, which fixes the missed wavelength-only record. Tightened the range rule so unlabeled summary ranges are skipped and only endpoints tied to named conditions are kept, which removes the extra range-endpoint records.",
+   "cand_scores": [
+    1.0,
+    1.0,
+    0.941
+   ],
+   "train_failures_before": 2
+  }
+ ],
+ "opt_tokens": 229277,
+ "opt_calls": 104,
+ "final_train": {
+  "acc": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "value_f1": 1.0
+ }
+}

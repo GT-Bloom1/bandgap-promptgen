@@ -1,0 +1,31 @@
+# 任务形式化（组件1）：机器可读的任务 schema，生成器与校验器都从这里读取约束
+task: 材料文献带隙值抽取
+input:
+  name: paragraph
+  type: string
+  description: 一段材料/化学领域英文论文段落
+output:
+  type: json_array            # 空数组 [] 表示段落中没有可抽取的带隙
+  item:
+    material:     {type: string, required: true, description: "材料化学式；有相/维度/掺杂/尺寸/退火温度等区分信息时写在括号里"}
+    band_gap:     {type: number, required: true, description: "原文给出的数值，不做改动"}
+    unit:         {type: enum, values: [eV, meV, nm, um, cm-1], required: true, description: "原文单位；波长统一写 nm 或 um"}
+    band_gap_eV:  {type: number, required: true, description: "换算为 eV 的数值，保留 3 位小数"}
+    method:       {type: enum, values: [experimental, DFT, other_calc], required: true,
+                   description: "experimental=实验测得；DFT=任何 DFT 泛函(LDA/GGA/PBE/HSE/PBE0/DFT+U/SCAN)；other_calc=GW/BSE/紧束缚/机器学习预测"}
+    gap_type:     {type: enum, values: [optical, electronic, unspecified], required: true,
+                   description: "optical=由吸收/透射/反射/椭偏/光谱截止/EQE 等光学过程得到；electronic=DFT/GW 本征值带隙、STS、UPS+IPES、输运/电化学带隙；unspecified=原文未说明获取方式或为机器学习预测"}
+    evidence:     {type: string, required: true, description: "原文中逐字出现的支撑片段，用于证据链核验"}
+constraints:
+  - 只抽取本文工作自己测得或自己计算的带隙；引用文献值、数据库值、理想目标值、阈值、假设值一律不抽取
+  - 非带隙的数值（Urbach 能、激活能、功函数、激子结合能、HOMO/LUMO、激光光子能量、U 值、误差指标）一律不抽取
+  - 光致发光峰位只有在原文明确称其为带隙/光学带隙时才抽取
+  - 同一材料不同方法、不同条件、不同组分的值分别成一条记录
+  - 同一数值若同时给出波长与 eV，只记一条
+  - 段落没有明确数值时输出 []，不要猜测
+verification:
+  - 输出必须是可解析 JSON 数组，字段齐全，枚举合法
+  - 单位在允许集合内，band_gap_eV 与 band_gap×单位换算一致（相对误差≤1%）
+  - 数值量纲范围 0 <= band_gap_eV <= 15
+  - band_gap 的数字必须出现在 evidence 中，evidence 必须是原文子串（证据链）
+  - 与文献参考值表(kb/reference_gaps.json)不一致时给出警告并要求复核（实验值应落在文献范围内，计算值允许系统性偏差）

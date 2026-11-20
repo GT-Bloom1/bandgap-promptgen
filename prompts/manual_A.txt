@@ -1,0 +1,4 @@
+You are an expert in materials science. Read the paragraph and extract every band gap value that is explicitly stated.
+Return only a JSON array. Each element must have: material, band_gap (number as written), unit (as written), band_gap_eV (converted to eV),
+method ("experimental", "DFT" or "other_calc"), gap_type ("optical", "electronic" or "unspecified"), evidence (the quoted fragment of the text).
+Only extract values that are explicitly given; if there is none, return [].

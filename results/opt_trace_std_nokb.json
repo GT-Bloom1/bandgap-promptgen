@@ -1,0 +1,37 @@
+{
+ "trace": [
+  {
+   "round": 0,
+   "score": 0.9420579420579421,
+   "acc": 0.9230769230769231,
+   "f1": 0.9610389610389611,
+   "n_rules": 9,
+   "kind": "init",
+   "analysis": ""
+  },
+  {
+   "round": 1,
+   "score": 1.0,
+   "acc": 1.0,
+   "f1": 1.0,
+   "n_rules": 10,
+   "kind": "accepted",
+   "analysis": "Addressed a missed record where the gap was given only as an absorption-edge wavelength from which the band gap was estimated (new wavelength rule, softened recall wording in the role), and spurious range-endpoint records emitted alongside specific sample values (tightened the range rule and added a matching self-check).",
+   "cand_scores": [
+    1.0,
+    1.0,
+    0.915
+   ],
+   "train_failures_before": 2
+  }
+ ],
+ "opt_tokens": 169252,
+ "opt_calls": 104,
+ "final_train": {
+  "acc": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "value_f1": 1.0
+ }
+}

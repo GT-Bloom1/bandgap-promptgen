@@ -1,0 +1,52 @@
+{
+ "trace": [
+  {
+   "round": 0,
+   "score": 0.967948717948718,
+   "acc": 0.9615384615384616,
+   "f1": 0.9743589743589743,
+   "n_rules": 9,
+   "kind": "init",
+   "analysis": ""
+  },
+  {
+   "round": 1,
+   "score": 0.9672557172557172,
+   "acc": 0.9615384615384616,
+   "f1": 0.972972972972973,
+   "n_rules": 10,
+   "kind": "rejected",
+   "analysis": "The model over-extracted: it turned a summary range into separate records for its endpoints, and added commentary like 'not specified' to material labels. I replaced the 'list each value of a range' wording with a rule that range endpoints are context, only sample-specific values are extracted, and labels contain only stated conditions. I also added a matching self-check.",
+   "cand_scores": [
+    0.967,
+    0.967,
+    0.967
+   ],
+   "train_failures_before": 1
+  },
+  {
+   "round": 2,
+   "score": 0.9672557172557172,
+   "acc": 0.9615384615384616,
+   "f1": 0.972972972972973,
+   "n_rules": 10,
+   "kind": "rejected",
+   "analysis": "The model emitted the endpoints of a general range as separate records because the old rule said to list each value of a range; I replaced it with a rule that skips range endpoints and keeps only values tied to a specific sample or condition (explicit series values remain). I also added a matching self-check item.",
+   "cand_scores": [
+    0.967,
+    0.967,
+    0.967
+   ],
+   "train_failures_before": 1
+  }
+ ],
+ "opt_tokens": 430668,
+ "opt_calls": 182,
+ "final_train": {
+  "acc": 0.9615384615384616,
+  "precision": 0.95,
+  "recall": 1.0,
+  "f1": 0.9743589743589743,
+  "value_f1": 0.9743589743589743
+ }
+}

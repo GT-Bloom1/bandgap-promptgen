@@ -1,0 +1,243 @@
+[
+ {
+  "term": "optical band gap",
+  "keys": [
+   "optical",
+   "tauc",
+   "kubelka",
+   "diffuse reflectance",
+   "absorption edge",
+   "absorption onset",
+   "uv-vis",
+   "cut-off",
+   "ellipsometry",
+   "transmission"
+  ],
+  "text": "由吸收/透射/反射光谱得到的带隙（Tauc 外推、Kubelka-Munk、吸收边、光谱截止波长）。含激子效应，通常小于或等于准粒子（电子）带隙。gap_type 记为 optical。"
+ },
+ {
+  "term": "fundamental/electronic/transport gap",
+  "keys": [
+   "fundamental",
+   "transport gap",
+   "quasiparticle",
+   "scanning tunneling",
+   "sts",
+   "dI/dV",
+   "upS",
+   "inverse photoemission",
+   "electrochemical",
+   "cyclic voltammetry",
+   "conductivity"
+  ],
+  "text": "电子（基本）带隙：价带顶到导带底的能量差，由 STS、UPS+IPES、输运/电导率温度依赖、循环伏安或计算的本征值得到。gap_type 记为 electronic。"
+ },
+ {
+  "term": "Tauc plot",
+  "keys": [
+   "tauc",
+   "indirect",
+   "direct"
+  ],
+  "text": "(αhν)^n 对 hν 作图外推：n=2 对应直接带隙，n=1/2 对应间接带隙。直接/间接是带隙的性质，不改变 gap_type（仍是 optical）。"
+ },
+ {
+  "term": "Kubelka-Munk / diffuse reflectance",
+  "keys": [
+   "kubelka",
+   "diffuse reflectance",
+   "drs"
+  ],
+  "text": "粉末样品用漫反射光谱经 Kubelka-Munk 函数 F(R)转换为吸收，再做 Tauc 外推，得到光学带隙。"
+ },
+ {
+  "term": "wavelength to energy",
+  "keys": [
+   "nm",
+   "µm",
+   "um",
+   "cut-off",
+   "onset",
+   "edge"
+  ],
+  "text": "E(eV) = 1239.84 / λ(nm)；λ 为 µm 时 E = 1.23984 / λ(µm)。吸收边/截止波长越长，带隙越小。"
+ },
+ {
+  "term": "wavenumber to energy",
+  "keys": [
+   "cm-1",
+   "cm−1",
+   "wavenumber"
+  ],
+  "text": "E(eV) = 波数(cm^-1) × 1.23984e-4。注意区分吸收系数单位 cm^-1（如 E04 定义中的 1e4 cm^-1）与波数。"
+ },
+ {
+  "term": "meV",
+  "keys": [
+   "mev"
+  ],
+  "text": "1 meV = 0.001 eV。窄带隙半导体（Ge、InSb、HgCdTe）常以 meV 给出。"
+ },
+ {
+  "term": "PBE/LDA/GGA underestimation",
+  "keys": [
+   "pbe",
+   "lda",
+   "gga",
+   "kohn-sham"
+  ],
+  "text": "LDA/GGA(PBE)系统性低估半导体带隙。DFT 带隙是本征值之差，method=DFT，gap_type=electronic。"
+ },
+ {
+  "term": "hybrid functional",
+  "keys": [
+   "hse",
+   "hse06",
+   "pbe0",
+   "hybrid",
+   "b3lyp",
+   "scan",
+   "dft+u",
+   "pbe+u",
+   "hubbard"
+  ],
+  "text": "HSE06、PBE0、SCAN、DFT+U 仍属 DFT（method=DFT）；U、混合比例（0.25）、截断能等是计算参数，不是带隙。"
+ },
+ {
+  "term": "GW / quasiparticle",
+  "keys": [
+   "gw",
+   "g0w0",
+   "quasiparticle",
+   "bse",
+   "bethe-salpeter"
+  ],
+  "text": "GW 给准粒子（电子）带隙，method=other_calc、gap_type=electronic；BSE 给含激子的光学带隙，method=other_calc、gap_type=optical。二者都不是 DFT。"
+ },
+ {
+  "term": "machine-learning predicted gap",
+  "keys": [
+   "machine learning",
+   "neural network",
+   "random forest",
+   "predict",
+   "model"
+  ],
+  "text": "机器学习预测值 method=other_calc，gap_type=unspecified；MAE/RMSE 是误差指标，不是带隙；数据库值（Materials Project）是引用值。"
+ },
+ {
+  "term": "exciton binding energy",
+  "keys": [
+   "exciton",
+   "binding energy"
+  ],
+  "text": "激子结合能（几十 meV）是光学带隙与电子带隙之差的一部分，不是带隙。"
+ },
+ {
+  "term": "photoluminescence peak",
+  "keys": [
+   "photoluminescence",
+   "pl peak",
+   "emission"
+  ],
+  "text": "PL 峰位是发射能量，受 Stokes 位移和缺陷态影响，除非原文明确称之为（光学）带隙，否则不当作带隙；单层 TMD 的 PL 峰常被称为直接光学带隙。"
+ },
+ {
+  "term": "Urbach energy",
+  "keys": [
+   "urbach"
+  ],
+  "text": "Urbach 能描述吸收带尾陡度（几十到几百 meV），不是带隙。"
+ },
+ {
+  "term": "work function / electron affinity / ionization potential",
+  "keys": [
+   "work function",
+   "electron affinity",
+   "ionization",
+   "homo",
+   "lumo",
+   "fermi level"
+  ],
+  "text": "功函数、电子亲和能、电离势、HOMO/LUMO、费米能级都是能级位置，不是带隙；HOMO-LUMO 差值若原文称为电化学带隙才抽取。"
+ },
+ {
+  "term": "activation energy",
+  "keys": [
+   "activation energy"
+  ],
+  "text": "电导热激活能约为带隙的一半（本征）或杂质能级位置，不是带隙。"
+ },
+ {
+  "term": "quantum confinement",
+  "keys": [
+   "quantum dot",
+   "nanocrystal",
+   "nanowire",
+   "nanosheet",
+   "confinement",
+   "nanoparticle",
+   "monolayer",
+   "thickness",
+   "diameter"
+  ],
+  "text": "尺寸减小使带隙增大；material 中应写明尺寸/维度/掺杂/组分/温度等区分信息，相同材料不同条件分别记录。"
+ },
+ {
+  "term": "Shockley-Queisser optimum",
+  "keys": [
+   "shockley",
+   "single-junction",
+   "tandem",
+   "ideal",
+   "optimal"
+  ],
+  "text": "太阳能电池的最佳带隙、叠层电池的理想带隙属于设计目标值，不是测得的带隙。"
+ },
+ {
+  "term": "photocatalyst thresholds",
+  "keys": [
+   "water splitting",
+   "photocatalyst",
+   "must have",
+   "larger than"
+  ],
+  "text": "光催化等应用的热力学阈值或设计要求（must be larger than …）不是材料自身的带隙。"
+ },
+ {
+  "term": "literature citation cues",
+  "keys": [
+   "reported",
+   "literature",
+   "previous",
+   "ref.",
+   "ref",
+   "earlier",
+   "refer",
+   "experimental value",
+   "agree"
+  ],
+  "text": "出现 reported in literature / Ref. [n] / earlier reports / 数据库 等措辞的数值是引用值，不抽取；除非同一句明确是本文测得。"
+ },
+ {
+  "term": "band gap qualitative statements",
+  "keys": [
+   "wide band gap",
+   "narrow band gap",
+   "band gap engineering",
+   "not determined",
+   "beyond the scope"
+  ],
+  "text": "“wide band gap”“带隙工程有前景”等定性说法没有数值，输出 []；明确写 was not determined 也输出 []。"
+ },
+ {
+  "term": "nanoscale size",
+  "keys": [
+   "nm",
+   "crystallite",
+   "thickness",
+   "diameter"
+  ],
+  "text": "nm 既可能是波长，也可能是晶粒尺寸、膜厚、直径。只有语境为吸收边/截止/光谱位置时才按波长换算。"
+ }
+]

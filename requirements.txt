@@ -1,0 +1,5 @@
+anthropic>=1.12
+scikit-learn
+pyyaml
+matplotlib
+openpyxl

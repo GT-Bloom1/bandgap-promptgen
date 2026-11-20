@@ -1,0 +1,92 @@
+[
+ {
+  "id": "U1",
+  "text": "The Nb-doped TiO2 thin films were deposited on quartz glass substrates by magnetron sputtering. The undoped TiO2 reference exhibits an absorption edge at 385 nm, while the doped sample shows a red shift to 412 nm. HSE06 calculations were also performed for comparison but the computed gap is not reported here.",
+  "output": [
+   {
+    "material": "TiO2 (undoped reference, thin film)",
+    "band_gap": 385,
+    "unit": "nm",
+    "band_gap_eV": 3.22,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "The undoped TiO2 reference exhibits an absorption edge at 385 nm"
+   },
+   {
+    "material": "TiO2 (Nb-doped, thin film)",
+    "band_gap": 412,
+    "unit": "nm",
+    "band_gap_eV": 3.009,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "the doped sample shows a red shift to 412 nm"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 3068
+ },
+ {
+  "id": "U2",
+  "text": "Monolayer WS2 was exfoliated onto SiO2/Si wafers. Photoluminescence measurements reveal an emission peak corresponding to an optical gap of 2.05 eV. Independent PBE calculations on the same structure give an electronic gap of 1.66 eV. The temperature of the measurement was not specified by the authors.",
+  "output": [
+   {
+    "material": "WS2 (monolayer)",
+    "band_gap": 2.05,
+    "unit": "eV",
+    "band_gap_eV": 2.05,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "an emission peak corresponding to an optical gap of 2.05 eV"
+   },
+   {
+    "material": "WS2 (monolayer)",
+    "band_gap": 1.66,
+    "unit": "eV",
+    "band_gap_eV": 1.66,
+    "method": "DFT",
+    "gap_type": "electronic",
+    "evidence": "Independent PBE calculations on the same structure give an electronic gap of 1.66 eV"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 3850
+ },
+ {
+  "id": "U3",
+  "text": "Three chalcogenide compounds were investigated: ZnS, ZnSe and ZnTe. The powders were prepared by solid-state reaction and ground for 30 minutes. X-ray diffraction confirmed the sphalerite structure for all three. Lattice parameters refined to 5.41, 5.67 and 6.10 A respectively. Subsequent optical measurements gave band gaps of 3.68, 2.70 and 2.25 eV, respectively.",
+  "output": [
+   {
+    "material": "ZnS (sphalerite)",
+    "band_gap": 3.68,
+    "unit": "eV",
+    "band_gap_eV": 3.68,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "Subsequent optical measurements gave band gaps of 3.68, 2.70 and 2.25 eV"
+   },
+   {
+    "material": "ZnSe (sphalerite)",
+    "band_gap": 2.7,
+    "unit": "eV",
+    "band_gap_eV": 2.7,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "Subsequent optical measurements gave band gaps of 3.68, 2.70 and 2.25 eV"
+   },
+   {
+    "material": "ZnTe (sphalerite)",
+    "band_gap": 2.25,
+    "unit": "eV",
+    "band_gap_eV": 2.25,
+    "method": "experimental",
+    "gap_type": "optical",
+    "evidence": "Subsequent optical measurements gave band gaps of 3.68, 2.70 and 2.25 eV"
+   }
+  ],
+  "errors": [],
+  "warnings": [],
+  "tokens": 4347
+ }
+]

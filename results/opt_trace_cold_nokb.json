@@ -1,0 +1,52 @@
+{
+ "trace": [
+  {
+   "round": 0,
+   "score": 0.9166666666666667,
+   "acc": 0.8846153846153846,
+   "f1": 0.9487179487179489,
+   "n_rules": 9,
+   "kind": "init",
+   "analysis": ""
+  },
+  {
+   "round": 1,
+   "score": 0.9672557172557172,
+   "acc": 0.9615384615384616,
+   "f1": 0.972972972972973,
+   "n_rules": 11,
+   "kind": "accepted",
+   "analysis": "Fixed three patterns: missed gaps given only as an absorption-edge wavelength (new explicit rule), spurious range endpoints and verbose labels (range rule now excludes spans, labels kept short), and baseline or database values extracted as comparison entries (removed the comparison exception and excluded model error metrics).",
+   "cand_scores": [
+    0.967,
+    0.948,
+    0.941
+   ],
+   "train_failures_before": 3
+  },
+  {
+   "round": 2,
+   "score": 1.0,
+   "acc": 1.0,
+   "f1": 1.0,
+   "n_rules": 11,
+   "kind": "accepted",
+   "analysis": "The old span rule discarded endpoints of a 'from X to Y' series even when each endpoint corresponds to a stated condition, so the model dropped those records and kept only the explicitly labeled intermediate value. The rewrite extracts every condition-linked endpoint and intermediate value, still skips unlinked summary ranges, and lets records reuse one evidence sentence.",
+   "cand_scores": [
+    1.0,
+    1.0,
+    0.967
+   ],
+   "train_failures_before": 1
+  }
+ ],
+ "opt_tokens": 266318,
+ "opt_calls": 182,
+ "final_train": {
+  "acc": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "value_f1": 1.0
+ }
+}

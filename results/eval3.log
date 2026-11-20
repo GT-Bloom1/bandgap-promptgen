@@ -1,0 +1,13 @@
+12:10:55 A_manual             acc=0.671 f1=0.679 fmt=0.557 tok=561
+12:10:55 B_direct_llm         acc=0.629 f1=0.639 fmt=1.000 tok=1579
+12:10:55 A2_manual_schema     acc=0.986 f1=0.990 fmt=0.529 tok=973
+12:10:55 OURS                 acc=0.943 f1=0.933 fmt=1.000 tok=2431
+12:10:55 OURS_noKB            acc=0.986 f1=0.995 fmt=1.000 tok=1606
+12:10:55 OURS_noLoop          acc=0.943 f1=0.942 fmt=1.000 tok=2132
+12:10:55 OURS_noRepair        acc=0.943 f1=0.933 fmt=1.000 tok=2431
+12:10:55 COLD_gen_only        acc=0.914 f1=0.953 fmt=1.000 tok=1211
+12:10:56 COLD_KB              acc=0.957 f1=0.967 fmt=1.000 tok=1812
+12:10:56 COLD_loop            acc=0.971 f1=0.986 fmt=1.000 tok=1243
+12:10:56 COLD_full            acc=0.957 f1=0.967 fmt=1.000 tok=1812
+12:10:56 COLD_full_noRepair   acc=0.957 f1=0.967 fmt=1.000 tok=1812
+12:10:56 API 统计: {'calls': 0, 'cache_hits': 842}

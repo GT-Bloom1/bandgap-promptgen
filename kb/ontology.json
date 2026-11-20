@@ -1,0 +1,14 @@
+{
+ "method_ontology": {
+   "experimental": ["UV-vis","DRS","Kubelka-Munk","Tauc","transmission","photoreflectance","ellipsometry","FTIR","EQE","STS","UPS","IPES","conductivity","cyclic voltammetry","absorption edge","cut-off wavelength","photoluminescence (when called gap)"],
+   "DFT": ["LDA","GGA","PBE","PBEsol","HSE06","PBE0","B3LYP","SCAN","mBJ","DFT+U","PBE+U"],
+   "other_calc": ["GW","G0W0","BSE","tight-binding","k.p","machine learning","neural network","random forest","semi-empirical"]
+ },
+ "gap_type_ontology": {
+   "optical": ["absorption","transmission","reflectance","Tauc","Kubelka-Munk","ellipsometry","photoreflectance","FTIR absorption","EQE","cut-off","absorption edge","onset","BSE","E04","PL when called optical gap"],
+   "electronic": ["DFT eigenvalue gap","GW quasiparticle gap","STS","UPS+IPES","transport gap","conductivity","electrochemical gap","fundamental gap"],
+   "unspecified": ["measured band gap without technique","machine learning prediction"]
+ },
+ "non_gap_quantities": ["Urbach energy","activation energy","work function","exciton binding energy","HOMO","LUMO","Hubbard U","laser photon energy","mean absolute error","Voc","threshold voltage","crystallite size","film thickness","temperature coefficient alpha","target/ideal gap","threshold gap","cited literature value","database value"],
+ "unit_conversion": {"nm":"1239.84/x","um":"1.23984/x","cm-1":"x*1.23984e-4","meV":"x/1000","eV":"x"}
+}
